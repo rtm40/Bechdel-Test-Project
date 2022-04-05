@@ -1,0 +1,88 @@
+---
+title: "Topic ideas"
+author: "The Kable Guys: Jerry Hou, Arjun Prabhakar, Nathan Huang, Ryan Mitchell"
+date: "October 7, 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
+```
+
+
+```{r load-packages}
+library(tidyverse) 
+``` 
+
+```{r load-data}
+movies <- read_csv("data/movies.csv")
+music <- read_csv("data/music.csv")
+pollution <- read_csv("data/pollution.csv")
+```
+
+# Data Set 1
+
+## Introduction and Data
+
+`The `movies.csv` dataset is a part of the Tidy Tuesday repository. The dataset 
+comes from a FiveThirtyEight article, which relied on data from BechdelTest.com 
+and The-Numbers.com. FiveThirtyEight used the former to determine if films passed 
+the Bechdel Test and the latter to obtain financial information on the films. 
+The `movies.csv` dataset has 1794 observations (each representing a film) and 34 
+variables. Key variables in the dataset are genre, IMDB rating, domestic gross, 
+international gross, budget, awards, and whether or not the film passes the 
+Bechdel Test.
+
+## Research questions 
+
+Are films that pass the Bechdel Test better received by audiences and critics?
+Does the IMDB rating of a movie have a relationship with domestic gross or the amount of awards the movie receives?
+
+# Data Set 2
+
+## Introduction and Data
+
+The `audio_features.csv` dataset was found on the Tidy Tuesday repository and comes from Data.world, courtesy of Sean Miller, Billboard.com and Spotify. The data was collected by Spotify's analytics of tracks uploaded and user interaction with the tracks. The csv file has 29,503 observations and 22 columns. Some notable variables are song, genre, duration in ms, and track popularity on Spotify.
+
+## Research questions 
+
+Some research questions we had were:
+Are songs that use major or minor melodies more popular?
+Does the musical genre of a song predict its popularity?
+
+# Data Set 3
+
+## Introduction and Data
+
+The `pollution.csv` dataset was found on the Tidy Tuesday repository and comes from Break Free 
+from Plastic courtesy of Sarah Sauve. The csv file has 13,380 observations and 
+14 columns. Some notable variables are country of pollution incident, parent
+company causing pollution incident, grand pollutant total, and pvc amount. 
+
+## Research questions 
+
+How does parent company affect the amount of pollutant and does this differ
+for different kinds of pollutants? 
+
+# Glimpse of data sets
+
+## Data set 1
+
+```{r glimpse-1}
+glimpse(movies)
+```
+
+## Data set 2
+
+```{r glimpse-2}
+glimpse(music)
+```
+
+## Data set 3
+
+```{r glimpse-3}
+glimpse(pollution)
+```
+

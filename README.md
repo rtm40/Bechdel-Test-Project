@@ -1,4 +1,4 @@
-Movies Project
+Project for STA 210 - Fall 2021 at Duke University
 ================
 by The Kable Guys
 
